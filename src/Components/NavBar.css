@@ -1,0 +1,50 @@
+.NavBar {
+    display: grid;
+    grid-template-columns: 2fr .5fr .5fr .5fr;
+    width: 100vw;
+    height: 15vh;
+    margin-bottom: 4%;
+    
+    background-image: linear-gradient(to bottom right, rgb(177, 20, 62), rgba(25, 34, 200, 0.773));
+    color: white;
+    justify-content: center;
+    text-align: left;
+    box-shadow: 7px 7px 7px 7px GREY;
+
+
+}
+
+.NavBar h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.NavBar a {
+    color: white;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.2rem;
+
+}
+
+a:hover {
+    color: rgb(255, 174, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .NavBar h1 {
+        font-size: 1.5rem;
+    }
+
+    .NavBar a {
+        font-size: 1rem;
+    }
+
+
+
+}

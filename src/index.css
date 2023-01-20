@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: monospace;
+    text-align: center;
+    background-color: rgb(237, 222, 222);
+
+}
+
+/* h1 {
+    color: white;
+} */
