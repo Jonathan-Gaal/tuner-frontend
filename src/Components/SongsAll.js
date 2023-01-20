@@ -16,9 +16,26 @@ const SongsAll = () => {
 
   return (
     <div className="SongsAll">
-      {songs.map((song) => {
-        return <Song key={song.id} song={song} />;
-      })}
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>
+                <h3>Watch Video!</h3>
+              </th>
+              <th>
+                <h3>Song Details</h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {songs.map((song) => {
+              return <Song key={song.id} song={song} />;
+            })}
+          </tbody>
+        </table>
+      </section>
     </div>
   );
 };

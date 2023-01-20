@@ -1,13 +1,26 @@
 import { Link } from "react-router-dom";
+import "./Song.css";
 
 // SONG DISPLAYED IN songs.map in SONGSALL
 const Song = ({ song }) => {
   return (
-    <div className="Song">
-      <a href={song.video_url} target="_blank" rel="noreferrer">
-        {song.title}
-      </a>
-    </div>
+    <tr>
+      <td>
+        {song.is_favorite ? (
+          <span>⭐️</span>
+        ) : (
+          <span>&nbsp; &nbsp; &nbsp;</span>
+        )}
+      </td>
+      <td>
+        <a href={song.video_url} target="_blank" rel="noreferrer">
+          <h4>{song.title}</h4>
+        </a>
+      </td>
+      <td>
+        <Link to={`/songs/${song.id}`}>✏️</Link>
+      </td>
+    </tr>
   );
 };
 

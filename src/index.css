@@ -4,10 +4,31 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: monospace;
     text-align: center;
-    background-color: rgb(237, 222, 222);
+    background-color: rgb(232, 222, 204);
 
 }
 
-/* h1 {
-    color: white;
-} */
+.header{
+    color: rgb(177, 20, 62)
+}
+
+
+table {
+    width: 90%;
+    margin: auto;
+    
+}
+
+td {
+    text-align: center;
+    background: rgb(196, 145, 164);
+}
+
+tbody td:not(td:first-of-type):hover {
+  
+    opacity: 0.9;
+}
+
+thead {
+    color:rgb(177, 20, 62);
+}
