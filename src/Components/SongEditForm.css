@@ -1,0 +1,47 @@
+input {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px BLACK;
+    text-align: center;
+    padding: 1%;
+}
+
+.EditedSong {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(40, 106, 187), rgb(0, 191, 255));
+    padding: 2%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 7px 7px 7px 7px GREY;
+    padding: 1%;
+    padding-top: 2%;
+}
+
+#btnSubmit {
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .EditedTransaction {
+        width: 90%;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+}
