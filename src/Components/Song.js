@@ -14,7 +14,9 @@ const Song = ({ song }) => {
       </td>
       <td>
         <a href={song.video_url} target="_blank" rel="noreferrer">
-          <h4>{song.title}</h4>
+          <h4>
+            {song.title} - {song.artist}
+          </h4>
         </a>
       </td>
       <td>
