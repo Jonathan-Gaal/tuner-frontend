@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import Comments from "./Comments";
 const API = process.env.REACT_APP_API_URL;
 
 const SongDetails = () => {
@@ -57,8 +58,9 @@ const SongDetails = () => {
         <Link to={`/songs/${id}/edit`}>
           <button>Edit</button>
         </Link>
-        <button onClick={handleDelete}>Delete</button>
+        <button onClick={handleDelete}>Delete Song</button>
       </div>
+      <Comments />
     </article>
   );
 };
