@@ -28,12 +28,6 @@ const Comment = ({ oneComment, handleDeleteComment, handleSubmit }) => {
           <p>{comment}</p>
         </div>
       )}
-
-      <h4>
-        <span>Rating: {rating}</span>
-      </h4>
-      <h5>{commenter}</h5>
-      <p>{comment}</p>
       <button onClick={() => handleDeleteComment(id)}>Delete Comment</button>
       <button onClick={toggleView}>Edit This Comment</button>
     </div>
